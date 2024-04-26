@@ -1,6 +1,6 @@
 
 # Terraform-docker
-This project automates the deployment of a Dockerized application on an AWS EC2 instance using Terraform.
+This project automates the deployment of a Dockerized application on an AWS EC2 instance using Terraform.i have used s3 as remote backend.
 
 # Overview
 The project provisions an EC2 instance on AWS, installs Docker, and deploys a Dockerized application. It utilizes Terraform for infrastructure provisioning and Docker for containerization.
