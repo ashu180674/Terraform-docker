@@ -69,6 +69,7 @@ resource "aws_volume_attachment" "ebs_attachment" {
   device_name = var.device_name
   volume_id   = aws_ebs_volume.encrypted_volume.id
   instance_id = aws_instance.ec2_instance.id
+  depends_on = [aws_ebs_volume.encrypted_volume]
 }
 
 resource "null_resource" "app_block" {
