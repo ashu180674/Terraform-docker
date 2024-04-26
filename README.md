@@ -1,6 +1,10 @@
 
 # Terraform-docker
 This project automates the deployment of a Dockerized application on an AWS EC2 instance using Terraform.i have used s3 as remote backend.
+![Screenshot from 2024-04-26 13-18-36](https://github.com/ashu180674/terraform-docker/assets/105533911/10a3e02c-d627-4081-9733-80acd5fce4a8)
+
+URL:  http://13.234.119.26:8081/api/v1
+
 
 # Overview
 The project provisions an EC2 instance on AWS, installs Docker, and deploys a Dockerized application. It utilizes Terraform for infrastructure provisioning and Docker for containerization.
