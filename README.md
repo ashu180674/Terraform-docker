@@ -11,12 +11,13 @@ The project provisions an EC2 instance on AWS, installs Docker, and deploys a Do
 
 # Folder Structure
 - **main.tf**: Terraform configuration file defining AWS resources and provisioning steps.
+- **backend.tf**: Remote-backend configuration to store state files in an S3 bucket.
 - **variables.tf**: Contains input variables used in the Terraform configuration.
 - **outputs.tf**: Defines output values to be displayed after Terraform execution.
 - **security-group.tf**: Configuration for AWS security group.
 - **application/**: Folder containing app.py,Dockerfile,requirements.txt files.
 
-# Terraform Configuration (main.tf)
+# Terraform Configuration (main.tf,backend.tf)
 - *Defines the AWS provider with specified region and profile.*
 - *Configures Terraform backend to store state files in an S3 bucket.*
 - *Retrieves the latest Ubuntu AMI using aws_ami data source.*
