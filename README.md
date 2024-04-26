@@ -17,13 +17,13 @@ The project provisions an EC2 instance on AWS, installs Docker, and deploys a Do
 - **application/**: Folder containing app.py,Dockerfile,requirements.txt files.
 
 # Terraform Configuration (main.tf)
-- Defines the AWS provider with specified region and profile.
-- Configures Terraform backend to store state files in an S3 bucket.
-- Retrieves the latest Ubuntu AMI using aws_ami data source.
-- Creates an EC2 instance with specified AMI, instance type, key pair, and security group.
-- Configures EBS encryption using AWS KMS key and creates an encrypted EBS volume attached to the EC2 instance.
-- Transfers application files (app.py, requirements.txt, Dockerfile) to the EC2 instance.
-- Executes remote commands via SSH to install Docker, build Docker image, and run the containerized application.
+- *Defines the AWS provider with specified region and profile.*
+- *Configures Terraform backend to store state files in an S3 bucket.*
+- *Retrieves the latest Ubuntu AMI using aws_ami data source.*
+- *Creates an EC2 instance with specified AMI, instance type, key pair, and security group.*
+- *Configures EBS encryption using AWS KMS key and creates an encrypted EBS volume attached to the EC2 instance.*
+- *Transfers application files (app.py, requirements.txt, Dockerfile) to the EC2 instance.*
+- *Executes remote commands via SSH to install Docker, build Docker image, and run the containerized application.*
 ```bash
 
 provider "aws" {
